@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table width="100%" border="1" cellspacing="1" cellpadding="4" class="tabtop13" align="center">
+        <form action="wlq.php" method="POST">
+        <tr>
+            <td colspan="3"> <b>1.姓名和联系方式</b></td>
+        </tr>
+        <tr>
+                <td>真实姓名:</td>
+                <td>
+                    <form  autocomplete="on">
+                        <input type="text" name="name" required> <span style="color:black">*</span><br>
+                    </form>
+                </td>
+                <td>
+                    <form  autocomplete="on">
+                        <input type="radio" name="sex" value="男" >男
+                        <input type="radio" name="sex" value="女">女
+                    </form>
+                </td>
+        </tr>
+        <tr>
+                <td>电子邮箱:</td>
+                <td>
+                    <form autocomplete="on">
+                        <input type="email" name="email" autocomplete="off" required > <span style="color:black">*</span><br>
+                    </form>
+                </td>
+                <td><b>非常重要！</b><br>这是本工作室与您联系的首选方式哦，请填写真实</td>
+        </tr>
+        <tr>
+                <td>电话:</td>
+                <td>
+                    <form autocomplete="on">
+                        <input type="text" name="tel" required > <span style="color:black">*</span> <br>
+                    </form>
+                </td>
+                <td>电话为必须填写项</td>
+        </tr>
+        <tr>
+                <td>所实习部门:</td>
+                <td colspan="2">
+                    <form autocomplete="on">
+                        <input list="browsers" name="browser">
+                        <datalist id="browsers">
+                            <option value="研发">
+                            <option value="设计">
+                            <option value="管理">
+                            <option value="调研">
+                        </datalist>
+                    </form>
+                </td>
+        </tr>
+        <tr>
+                <td>实习岗位:</td>
+                <td>
+                    <form autocomplete="on">
+                       <input type="text" name="shixi" required> <span style="color:black">*</span> <br>
+                     </form>
+                </td>
+                <td>研发部岗位：前端/后端/运维</td>
+        </tr>
+        <tr>
+                <td>手机号码:</td>
+                <td>
+                    <form autocomplete="on">
+                           <input type="text" name="phonetel"><br>
+                     </form>
+                </td>
+                <td rowspan="3"> </td>
+        </tr>
+        <tr>
+                <td>邮箱:</td>
+                <td>
+                    <form autocomplete="on">
+                        <input type="email" name="emails" autocomplete="off"><br>
+                    </form>
+                </td>
+        </tr>
+        <tr>
+                <td>性别取向:</td>
+                <td>
+                    <form autocomplete="on">
+                        <input type="text" name="quxiang"><br>
+                      </form>
+                </td>
+        </tr>
+        <input type="submit" value="提交">
+        </form>
+    </table>
+</body>
+</html>
